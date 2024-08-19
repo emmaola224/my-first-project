@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Overpass;
+   }
+   body {
+    background-color: #121417;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   }
+   .container {
+    width: 350px;
+    padding: 32px;
+    background: linear-gradient(to bottom, #252d37, #1e252f);
+    border-radius: 30px;
+    box-sizing: border-box;
+   }
+   .icon {
+    background-color: #262f38;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+   }
+   h2 {
+    color: white;
+    margin-bottom: 8px;
+   }
+   p {
+    color: #969fad;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+   }
+   .rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+   }
+   .rating input[type='radio'] {
+    display: none;
+   }
+   .rating label {
+    background-color: #262f38;
+    color: #7c8798;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+   }
+   .rating label:hover,
+   .rating input[type='radio']:checked + label {
+    background-color: #fc7614;
+    color: white;
+   }
+   button {
+    background-color: #fc7614;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   }
+   button:hover {
+    background-color: white;
+    color: #fc7614;
+   }
+   .thank-you {
+    text-align: center;
+    display: none;
+   }
+   .thank-you img {
+    margin-bottom: 24px;
+   }
+   .selected {
+    background-color: #262f38;
+    color: #fc7614;
+    border-radius: 25px;
+    padding: 8px 16px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 24px;
+   }
